@@ -18,8 +18,3 @@ A Python tool to fetch research papers from PubMed based on a user-specified que
 - Poetry (for dependency management)
 
 ### Install Dependencies
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Bhavanapolimetla5/pubmed-fetcher.git
-   cd pubmed-fetcher
