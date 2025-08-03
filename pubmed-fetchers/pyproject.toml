@@ -1,0 +1,25 @@
+[tool.poetry]
+package-mode=false
+name = "pubmed-fetcher"
+version = "0.1.0"
+description = "A tool to fetch research papers with pharmaceutical/biotech company affiliations"
+authors = ["Your Name <bhavanapolimetla9133@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pubmed_fetcher"}]  # Explicitly include the package
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.28.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+black = "^22.0.0"
+isort = "^5.10.0"
+mypy = "^0.991"
+
+[tool.poetry.scripts]
+get-papers-list = "pubmed_fetcher.cli:main"  # Ensure this matches your module path
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
